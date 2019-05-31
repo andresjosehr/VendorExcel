@@ -57,10 +57,12 @@ class Cell
         if ($this->cell->getValue() !== null) {
             if ($this->cell->getValue() instanceof RichText) {
                 $value = $this->cell->getValue()->getPlainText();
-            } elseif ($calculateFormulas) {
-                $value = $this->cell->getCalculatedValue();
             } else {
-                $value = $this->cell->getValue();
+                if ($calculateFormulas) {
+                    $value = $this->cell->getCalculatedValue();
+                } else {
+                    $value = $this->cell->getValue();
+                }
             }
 
             if ($formatData) {

@@ -51,13 +51,7 @@ class StoreCollection
                  */
                 public function headings(): array
                 {
-                    if (!$this->withHeadings) {
-                        return [];
-                    }
-
-                    return is_array($first = $this->collection->first())
-                        ? $this->collection->collapse()->keys()->all()
-                        : array_keys($first->toArray());
+                    return $this->withHeadings ? $this->collection->collapse()->keys()->all() : [];
                 }
             };
 

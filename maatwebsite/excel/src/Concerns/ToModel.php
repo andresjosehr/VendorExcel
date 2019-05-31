@@ -9,7 +9,7 @@ interface ToModel
     /**
      * @param array $row
      *
-     * @return Model|Model[]|null
+     * @return Model|null
      */
     public function model(array $row);
 }

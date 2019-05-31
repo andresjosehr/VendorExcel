@@ -1058,34 +1058,32 @@
     },
     {
         "name": "maatwebsite/excel",
-        "version": "3.1.13",
-        "version_normalized": "3.1.13.0",
+        "version": "3.1.0",
+        "version_normalized": "3.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-            "reference": "d79ee01175c6a5e93f2a873dcda1b755b7570076"
+            "reference": "968614f8087d2b259b040b3884cbe7742dd89960"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/d79ee01175c6a5e93f2a873dcda1b755b7570076",
-            "reference": "d79ee01175c6a5e93f2a873dcda1b755b7570076",
+            "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/968614f8087d2b259b040b3884cbe7742dd89960",
+            "reference": "968614f8087d2b259b040b3884cbe7742dd89960",
             "shasum": ""
         },
         "require": {
-            "ext-json": "*",
-            "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*",
-            "opis/closure": "^3.1",
+            "illuminate/support": "^5.5",
             "php": "^7.0",
-            "phpoffice/phpspreadsheet": "^1.6"
+            "phpoffice/phpspreadsheet": "^1.4"
         },
         "require-dev": {
             "mockery/mockery": "^1.1",
-            "orchestra/database": "^3.8",
-            "orchestra/testbench": "^3.8",
-            "phpunit/phpunit": "^8.0",
+            "orchestra/database": "^3.6",
+            "orchestra/testbench": "^3.6",
+            "phpunit/phpunit": "^7.0",
             "predis/predis": "^1.1"
         },
-        "time": "2019-05-08T12:05:59+00:00",
+        "time": "2018-10-03T09:15:48+00:00",
         "type": "library",
         "extra": {
             "laravel": {
@@ -4877,6 +4875,67 @@
             "assert",
             "check",
             "validate"
+        ]
+    },
+    {
+        "name": "zanysoft/laravel-zip",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zanysoft/laravel-zip.git",
+            "reference": "466663746c92154c48a2d490efc6724f9f6e9652"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zanysoft/laravel-zip/zipball/466663746c92154c48a2d490efc6724f9f6e9652",
+            "reference": "466663746c92154c48a2d490efc6724f9f6e9652",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.0|^5.0",
+            "scrutinizer/ocular": "^1.0"
+        },
+        "time": "2017-10-10T03:22:41+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "ZanySoft\\Zip\\ZipServiceProvider"
+                ],
+                "aliases": {
+                    "Zip": "ZanySoft\\Zip\\ZipFacade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ZanySoft\\Zip\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Zany Soft",
+                "email": "info@zanysoft.co",
+                "homepage": "http://www.zanysoft.co"
+            }
+        ],
+        "description": "ZipArchive toolbox",
+        "homepage": "http://www.zanysoft.co",
+        "keywords": [
+            "merge",
+            "multiple",
+            "unzip",
+            "zip",
+            "ziparchive"
         ]
     }
 ]
